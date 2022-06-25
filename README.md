@@ -18,3 +18,6 @@ Simply grab the .zip folder from the [Releases](https://github.com/PkmnYellow/RS
 
 # Updating
 You can simply drag and drop **directories.txt** and **installedmods.txt** to the RSV2 Mods folder to upgrade to a new version.
+
+# FAQ & Known Issues
+Before posting any issues, refer to [this](https://steamcommunity.com/sharedfiles/filedetails/?id=2751815668) Steam guide for FAQ, compatibility, and known issues.
