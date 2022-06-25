@@ -1,0 +1,231 @@
+[HudPlayerArea]
+NoAmmo=
+NoGadget=EMPTY
+Reload=
+ShieldCombo=%s WITH %s
+LowAmmo=
+
+[TeammateNames]
+TeammateDown=%s IS DOWN
+MustSaveHim=YOU MUST SAVE HIM
+Michael=MICHAEL
+Jung=JUNG
+Gabriel=NOWAK
+Brody=BRODY
+Joanna=JOANNA
+Logan=KELLER
+Sharon=SHARON
+Gary=GARY
+
+[TalkerNames]
+AlphaTeam=ALPHA TEAM
+Six=SIX
+SharonJudd=SHARON JUDD
+ScottNeville=SCOTT NEVILLE
+NSAAgent=NSA AGENT
+Hurst=ECHO TEAM
+LoganKeller=LOGAN KELLER
+JoannaTorres=JOANNA TORRES
+GaryKenyon=GARY KENYON
+GabrielNowak=GABRIEL NOWAK
+AaronLawrence=AARON LAWRENCE
+
+[TeammateShortNames]
+Michael=MIKE
+
+[MapLegend]
+Title=MAP LEGEND
+Rainbow=RAINBOW
+Civilians=CIVILIAN
+Terrorist=TERRORIST
+FallenTeammate=FALLEN TEAMMATE
+Ladder=LADDER
+Rope=ROPE
+Door=DOOR
+Objective=OBJECTIVE
+
+[R6Weapon]
+Bullets=ROUNDS: %i
+FireMode=FIRE MODE SWITCH
+SoundSupp=SUPPRESSOR
+Laser=LASER
+GrenLauncher=GRENADE LAUNCHER
+TactLight=TACTICAL LIGHT
+PickupWeapon=HOLD TO PICKUP %s
+PickupNoAmmoTaken=NO ROUNDS TAKEN FROM %s
+PickupAmmo=PICKED UP %i ROUNDS FROM %s
+
+[TERROHUNT]
+HostilesCount=ENEMIES REMAINING: %i
+
+[GENERAL]
+SavingProgress=CHECKPOINT REACHED
+SavingProgressPS3=CHECKPOINT REACHED
+ObjectiveUpdated=OBJECTIVE UPDATED
+GetBackOnNavmesh=GET BACK IN THE PLAYABLE AREA
+TeamLeaderDead=YOUR LEADER IS DEAD
+CheckpointCompleted=ACT %d - SCENE %d: %s
+IntelAvailable=INTEL AVAILABLE
+
+[OBSERVER]
+Observing=OBSERVING %s
+ObservingText=OBSERVING
+Respawn=RESPAWNING IN %i
+TeamAverage=" (TEAM AVERAGE)"
+PlayerAverage=" (PLAYER AVERAGE)"
+RespawnCount="RESPAWNS REMAINING: "
+RespawnCountNone=RESPAWNS REMAINING: NONE
+NextPlayer=NEXT PLAYER
+PrevPlayer=PREVIOUS PLAYER
+Back=BACK
+RespawnEliminated=YOU HAVE BEEN ELIMINATED.
+RespawnNotAvailable=NO RESPAWNS AVAILABLE.
+
+[BRIEFING]
+Select=SELECT
+Observe=OBSERVE
+SelectSpawn=SELECT A SPAWN ZONE %i
+UseOutfitting=OUTFITTING
+Briefing=BRIEFING
+Back=BACK
+
+[R6TEAMSTATES]
+None=NONE
+DoorOpened=DOOR OPENED
+DoorOpening=DOOR OPENING
+DoorClosed=DOOR CLOSED
+DoorLocked=DOOR LOCKED
+ChokePoint=CHOKE POINT
+Window=WINDOW
+TakingCover=TAKING COVER
+Following=FOLLOWING
+Regrouping=REGROUPING
+Rappeling=RAPPELLING
+StandingBy=STANDING BY
+MoveToDoor=MOVING TO DOOR
+MoveToLadder=MOVING TO LADDER
+MoveToFastrope=MOVING TO FASTROPE
+MoveToRappelling=MOVING TO RAPPEL
+MoveToWindow=MOVING TO WINDOW
+MoveToCover=MOVING TO COVER
+InFastRope=USING FAST ROPE
+InLadder=USING LADDER
+EngagingEnemy=ENGAGING ENEMY
+ClearingRoom=CLEARING
+Interacting=INTERACTING
+ManDown=MAN DOWN
+EnemySpotted=ENEMY SPOTTED
+Holding=HOLDING
+BreachingDoor=BREACHING DOOR
+SwitchingROE=SWITCHING ROE
+UsingGrenade=THROWING GRENADE
+Suppressing=SUPPRESSING
+
+[RADAR]
+m_szDistanceIndicator=%i M
+ThermalScanAvailable=THERMAL SCAN AVAILABLE
+
+[RULESOFENGAGEMENT]
+Infiltrate=INFILTRATE
+Assault=ASSAULT
+
+[Buttons]
+//TODO: Really needed ?
+TriggerLeft=LT
+TriggerLeftPS3=L2
+TriggerRight=RT
+TriggerRightPS3=R2
+BumperTriggerLeft=LB
+BumperTriggerLeftPS3=L1
+BumperTriggerRight=RB
+BumperTriggerRightPS3=R1
+ThumbstickLeft=LS
+ThumbstickLeftPS3=L
+ThumbstickRight=RS
+ThumbstickRightPS3=R
+ThumbstickBtnLeft=LEFT STICK BUTTON
+ThumbstickBtnLeftPS3=L3
+ThumbstickBtnRight=RIGHT STICK BUTTON
+ThumbstickBtnRightPS3=R3
+
+[SOL]
+MEX_SOL_01='OPEN' THE GATE
+TeamBomb=TEAM 'DISARM' BOMB
+TeamComputer=TEAM 'HACK' COMPUTER
+TeamExplosives=TEAM 'SET UP' EXPLOSIVES
+TeamInspect=TEAM 'INSPECT' BODY
+TeamDoor=TEAM 'DISARM' DOOR
+TeamVan=TEAM 'SEARCH' VAN
+TeamInterrogate=TEAM 'INTERROGATE' MIGUEL
+TeamPower=TEAM 'CUT' POWER
+OpenDoor=OPEN DOOR
+
+[R6Interactions]
+CloseDoor=CLOSE DOOR
+CloseDoorBusy=CLOSE DOOR (BUSY)
+OpenDoor=OPEN DOOR
+OpenDoorBusy=OPEN DOOR (BUSY)
+SnakeCam=SNAKE CAM
+SnakeCamBusy=SNAKE CAM (BUSY)
+LeaveSnakeCam=EXIT SNAKE CAM
+LeaveSnakeCamBusy=EXIT SNAKE CAM (BUSY)
+OpenWindow=OPEN WINDOW
+OpenWindowBusy=OPEN WINDOW (BUSY)
+Climb=CLIMB
+ClimbBusy=CLIMB (BUSY)
+Breach=BREACH IN
+BreachBusy=BREACH IN (BUSY)
+Turret=TURRET
+TurretBusy=TURRET (BUSY)
+LeaveTurret=LEAVE
+LeaveTurretBusy=LEAVE (BUSY)
+EnterHelicopter=ENTER HELICOPTER
+EnterHelicopterBusy=ENTER HELICOPTER (BUSY)
+LeaveHelicopter=LEAVE HELICOPTER
+FastRope=FAST ROPE
+FastRopeBusy=FAST ROPE (BUSY)
+Heal=HEAL
+HealBusy=HEAL (BUSY)
+PickUp=PICK UP
+PickUpBusy=PICK UP (BUSY)
+Rappel=RAPPEL
+RappelBusy=RAPPEL (BUSY)
+Ladder=LADDER
+LadderBusy=LADDER (BUSY)
+DisarmBomb=DISARM BOMB
+DisarmBombBusy=DISARM BOMB (BUSY)
+ArmBomb=ARM BOMB
+ArmBombBusy=ARM BOMB (BUSY)
+Interact=INTERACT
+InteractBusy=INTERACT BUSY
+Jump=JUMP
+JumpBusy=JUMP (BUSY)
+Slide=SLIDE
+SlideBusy=SLIDE (BUSY)
+Outfitting=OUTFITTING
+OutfittingBusy=OUTFITTING (BUSY)
+TagEnemy=TAG ENEMY
+TagEnemyBusy=TAG ENEMY (BUSY)
+Follow=FOLLOW
+FollowBusy=FOLLOW (BUSY)
+Hold=HOLD
+HoldBusy=HOLD (BUSY)
+TeamDoor=TEAM 'MOVE TO' DOOR
+TeamFastRope=TEAM 'MOVE TO' FAST ROPE
+TeamRappel=TEAM 'USE' RAPPEL
+TeamTurret=TEAM 'USE' TURRET
+TeamLadder=TEAM 'USE' LADDER
+TeamTeammate=TEAM 'HEAL' TEAMMATE
+TeamBomb=TEAM 'DISARM' BOMB
+TeamComputer=TEAM 'HACK' COMPUTER
+TeamExplosives=TEAM 'SET UP' EXPLOSIVES
+TeamSearchVan=TEAM 'SEARCH' VAN
+Detonate=DETONATE
+SI_WireCut=CUT THE WIRE
+SI_Explode=DETONATE THE EXPLOSIVES
+
+[PIP]
+CiscoConnecting=CONNECTING...
+CiscoDigitageSignage=CISCO DIGITAL SIGNAGE
+CiscoInitiating=INCOMING DATA
+CiscoTransmissionEnded=DISCONNECTING...

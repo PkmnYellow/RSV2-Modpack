@@ -1,0 +1,41 @@
+*Terrorist Hunt Control V1.0 @ C06alt (99 terror mod)*
+mod by @ C06alt I think
+- Description -
+
+This set of key binds is to be used by a local server host while the game is in progress to allow for more randomness during gameplay.
+
+Each time you press a key feedback is produced in the console. Default console key is tilde.
+
+Enemy wave count resets at the start of each round but grenades and weapon mods stay as you set them until map change.
+
+Warning!! - Setting the wrong alternative spawn for the map will make everyone die at the start probably.
+Change map if you get stuck in a loop of death with this spawn bug.
+
+F1 - Next enemy Weapon Template. (+Ctrl Default template)
+F2 - Next enemy AI Template. (+Ctrl Default template)
+F3 - Toggle enemy grenades.
+F4 - Toggle enemy weapon mods.
+F5 - Increase enemy count in a wave (default 8).
+F6 - Decrease enemy count in a wave.
+F7 - Enemy only use pistols. (*+Ctrl random weaponry)
+F8 - Enemy only use smg. (*+Ctrl Defensive AI Tweak)
+F9 - Enemy only use assault. (*+Ctrl Aggressive AI Tweak)
+F10 - Enemy only use lmg.
+F11 - Enemy only use sniper.
+F12 - Enemy only use shields.
+
+Shift + H - Displays help for the spawning keybinds
+Shift + F1 - Set new Train spawn
+Shift + F2 - Set new Villa spawn
+Shift + F3 - Set new Theater spawn
+Shift + F4 - Set new Junkyard spawn
+Shift + F5 - Set new Convention spawn
+Shift + F6 - Set new Import spawn
+Shift + F7 - Set new Chinese spawn
+Shift + F8 - Set new Oil spawn
+Shift + F9 - Set new Calypso spawn
+Shift + F10 - Set maximum terrorists to kill to 1 - usefully if you want to speed up a round for some reason.
+Shift + F11 - Set maximum terrorists to kill to 99
+Shift + F12 - Set maximum terrorists to kill to 999 - probably impossible?
+
+--Anything with an "*" is in the newer one, NOT the original.--

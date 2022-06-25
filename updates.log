@@ -1,0 +1,123 @@
+**V9.2**
+1. TeknoR6Vegas2 Configuration.bat can now be ran independently, as long as directories.txt exists.
+2. Re-written the logic for TeknoR6Vegas2 installation to go directly to TeknoR6Vegas2 Configuration.bat after installation in Universal Installer.bat. More convenient in many ways.
+3. Added IMPORTANT.txt to the TeknoR6Vegas2_3.0 folder, to signify Admin mode.
+4. Added if check and error handling to the WMIC command in Run.bat if it initiates or not.
+5. Added if check for a directory with no spaces in Run.bat, so it knows to skip without cutting off the '2' in Vegas 2. Same thing added to TeknoR6Vegas2 Configuration.bat.
+6. Added description.rtf to The Complete Overhaul folder (if it 'blocks' content, it's just images), added readme.txt to TeknoR6Vegas2, and re-created the readme for Vegas 2 Realism for a better format.
+
+**V9.1**
+1. Implemented a better way of detecting Vegas 2 in Directory Finder.bat, simplifying the drive letter process, allowing users to grab their directory a bit faster than before. You no longer need to select steam/nonsteam, but selecting a drive letter is still required. Removed 3 branches of code in the process.
+2. Renamed Directory Finder.bat to Run.bat.
+3. Greatly improved error handling in Run.bat, and TeknoR6Vegas2 Configuration.bat.
+4. Tweaked ReplaceD.bat & loop.bat to support custom directories.
+5. Color-coded each .bat with a special color: Run.bat - Yellow, Universal Installer.bat - Light Aqua, TeknoR6Vegas2 Configuration.bat - Light Red, ReplaceD.bat - Aqua.
+6. Revised readme.rtf.
+7. Vegas2THServer & FOV install/uninstall batches created.
+8. Time calculation has been added to Run.bat for execution time of searching for the Vegas 2 directory. Referenced from: https://stackoverflow.com/questions/673523/how-do-i-measure-execution-time-of-a-command-on-the-windows-command-line.
+
+**V9.0**
+1. Added ReplaceD.bat and loop.bat in Vegas2THServer. The Task Scheduler tasks were only set for my directory and userid alone, but running ReplaceD.bat will fix the problem by replacing mine with yours in the .xml files. And no, ReplaceD.bat does not require admin mode. :)
+2. In Directory Finder.bat, :drive3, the else statement was incomplete for drive D.
+
+**V8.0**
+1. The first Vegas 2 Terrorist Hunt, Dedicated server pre-setup has been added as part of the modpack. Not a part of the automatic installation.
+
+**V7.4**
+1. For those who want the original Terrorist Hunt Control, an option has been added in Universal Installer.bat.
+
+**V7.3**
+1. Added 2 more additions to the Terrorist Hunt Control (courtesy of White_Mask) involving randomized weaponry, and ai spread/offensive mode. *TESTED AND TWEAKED
+
+**V7.2**
+1. Kept the directories.txt file, so it's not necessary to go through the loop process in Directory Finder.bat. It's still required to run, though, it saves an enormous amount of time.
+
+**V7.1**
+1. Rem commands are now implemented to explain the processes of all the batch files.
+
+**V7.0**
+1. An install/uninstall check has been added to the Install.bat's, and the Universal Installer.bat. Now, any mod installed will be logged in installedmods.txt for your convenience.
+2. Readme.rtf was revised.
+
+**V6.2**
+1. Challenging myself to create an identification check for mods installed and the uninstalling process.
+2. Added a 'for' loop and 2 'if' statements for each install.bat independently. This is to determine whether or not to add the mod to the installedmods.txt list.
+3. Added a fail safe for uninstalling all mods, in case installedmods.txt is missing.
+4. Uninstall/install check 'for' loops required all variables to be set to nothing beforehand. Otherwise, it'll reuse them from a previous batch file/instance.
+
+**V6.1**
+1. Terrorist Hunt Control stopped working for unknown reasons.
+2. Fixed by replacing PCKellerInput with the original, instead of the refurbished version.
+
+**V6.0**
+1. Terrorist Hunt Control is OFFICIALLY fully functional.
+2. Added IMPORTANT.txt to THC to notify of the importance of admin mode.
+3. Modified the install/uninstall batches to V2R.
+4. Edited TeknoR6Vegas2 Config.bat to head straight back to Universal Installer.bat, instead of close out of the command prompt.
+5. Uninstall.bat for V2R did not initially check KellerGadgetsConfig.
+
+**V5.7**
+1. Added Vegas 2 Realism Mod, for those that favor it over The Complete Overhaul Mod.
+2. Created the install/uninstall batches for V2R.
+
+**V5.6**
+1. Organized and tested THC V1.0, and it started to work.
+2. NOT WORKING: New spawn locations (Shift + F1-F9)
+   HALF-WORKING: Two toggle keybinds (F3 and F4) do not toggle, weapon and AI templates (F1 and F2) do not move to next template, increasing enemy count in a wave (F5 and F6) does not move to next wave.
+   WORKING: Terrorist spawning (Shift + F10-F12), base weapon loadouts (F7-F12), default terrorist guns/AI (Ctrl + F1-F2).
+3. Removed a bunch of 'if' statements that pointed to nothing in the install/uninstall batches.
+4. Created install/uninstall batches for THC.
+
+**V5.5**
+1. Terrorist Hunt Control V1.0 has been added. The configuration code was found on a Russian website, listed in the readme.rtf. 
+2. Organized the PCKellerInput for THC V1.0 about 2-3 times. Untested and likely inoperable.
+3. Added description.txt for THC V1.0 to show what each control binding does.
+
+**V5.4**
+1. Added rem commands in TeknoR6Vega2 Configuration, in case anyone wants to edit the values for 16 players and terrorist spawning in the Run TeknoR6Vegas2 shortcut manually.
+
+**V5.3**
+1. Excluded the Complete Overhaul mod from the installation process in Universal Installer.bat on accident. Added a decision to install/exclude.
+2. Added the Gun Graph.png in The Complete Overhaul Mod folder for reference of initial bullet velocity, bullet drop and the proper caliber.
+
+**V5.2**
+1. Added another spawn rate choice in Universal Installer for those suited to the 'default' spawn rate, which is 6.
+
+**V5.1**
+1. Tweaked the Universal Installer's installation process to be similar to the UI.bat from the Vegas 1 zip folder.
+2. Reversed the order of version updates to ascending to descending.
+
+**V5.0**
+1. Decided to hide all the other batch files except for the Directory Finder, as it's more in logic to run the DF first.
+2. Little edits here and there to the readme.rtf.
+3. The Drives B-M are now available!
+4. Re-added the decision between Universal Installer and TeknoR6Vegas2 Configuration for convenience to access the launcher IF you've had TeknoR6Vegas2 previously installed.
+5. Using a temporary VBScript, a shortcut is created of the 'Run.bat' from the TeknoR6Vegas2 Launcher to make it easy to launch TeknoR6Vegas2, instead of having to go through the Directory Finder every time.
+6. Cut out a bunch of unneeded code from when I relied on 'if' statements to figure out my friend's R6V2 directory.
+7. Cut out even more code involving to launch TeknoR6Vegas2 when Run.bat is pre-configured, as it's not in logic to launch it via TeknoR6Vegas2 Configuration anymore. After-configuration launch is still available.
+8. Created an 'if' checkup in TeknoR6Vegas2 Configuration.bat if you have the shortcut for 'Run.bat' located in this folder.
+
+**V4.2**
+1. Fixed Directory Finder to head straight to the Universal Installer, since it isn't in logic to have the choice between UI and TechnoR6Vegas2 Launcher at the beginning.
+2. Color-coded Universal Installer with light aqua text, and the TeknoR6Vegas2 Launcher with light red text to differentiate.
+3. Fixed a small, redirectory problem with the primary decision variable in TeknoR6Vegas2 Launcher.
+
+**V4.1**
+1. Added G and H drive to the list. (More to come, if needed)
+2. Tweaked some out of place variables between 2 different drives.
+3. Fixed a directory problem with Universal Installer when going back to start.
+4. Added a decision variable to the TeknoR6Vegas2 Launcher to go back to start, exit launcher, and go to the Universal Installer.
+
+**V4.0**
+1. Added the Directory Finder.bat for full, universal support.
+2. Changed the readme.txt to readme.rtf for a better format.
+3. Tweaked a couple of things in the code here and there, for the Universal Installer.
+
+**V3.0**
+1. Added a readme.txt for more information regarding the usage of the batch files and credibility to the mod creators.
+2. Revised the Uninstall.bat files for Realistic ReShade and The Complete Overhaul mod to make it ridiculously fool-proof, so uninstallation doesn't take place if you do not have the backups from install.
+
+**V2.0**
+1. Revised a few things in the code. It is officially fool-proof.
+2. Found a misplaced nonsteam directory in a steam installation section. Officially... fool-proof.
+3. Added TeknoR6Vegas2, 99 spawn rate (the genocide route), and a TeknoR6Vegas2 Launcher in the same folder as the Universal Installer.

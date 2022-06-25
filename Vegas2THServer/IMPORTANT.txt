@@ -1,0 +1,3 @@
+Run ReplaceD.bat. It's separate from the main installer.
+
+You must import the tasks on your own. Just search up 'Task Scheduler', click 'Task Scheduler Library', and on the right side Actions pane, click 'Import Task...'.

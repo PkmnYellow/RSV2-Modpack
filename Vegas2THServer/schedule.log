@@ -1,0 +1,26 @@
+1:30 - 2:29 PM Import
+2:30 - 3:29 PM Theater
+3:30 - 4:29 PM Vegas Junkyard
+4:30 - 5:29 PM Oil Refinery
+5:30 - 6:29 PM Three Kingdoms Casino
+6:30 - 7:29 PM Trainyard
+7:30 - 8:29 PM Penthouse
+8:30 - 9:29 PM Convention Center
+9:30 - 10:29 PM Murdertown
+10:30 - 11:29 PM Training
+11:30 - 12:29 AM Streets
+12:30 - 1:29 AM Kill House
+1:30 - 2:29 AM Presidio
+2:30 - 3:29 AM Calypso Casino
+3:30 - 4:29 AM Murdertown (Night)
+4:30 - 5:29 AM Training (Night)
+5:30 - 6:29 AM Comcast Event
+
+Loops across itself afterwards.
+
+1 hour per map.
+
+Repeat task every: 63,045 seconds (17 hours, 30 minutes, 45 seconds)
+Stop task if it runs longer than: 3,580 seconds (59 minutes, 40 seconds)
+
+Delay task for: 1+ hour [2nd-17th map] (1st map is system startup, no delay needed) Each map after the 2nd will increase by +1 hour.

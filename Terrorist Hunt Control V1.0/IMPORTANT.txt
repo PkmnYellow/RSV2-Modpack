@@ -1,0 +1,2 @@
+HOST ONLY: 
+Be sure to run R6Vegas2 in ADMIN MODE after you install. Otherwise, the keybinds for Terrorist Hunt Control will not fully function and the templates WILL NOT work.
