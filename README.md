@@ -3,7 +3,6 @@ A compiled mod bundle with batch installers/uninstallers for Tom Clancy's Rainbo
 
 The following mods are:
 * Realistic Reshade (shaders)
-* FOV (field of view)
 * TeknoR6Vegas2 (16 player campaign, terrorist hunt, and versus)
 * Terrorist Hunt Control (keybinds, AI tweaks)
 * The Complete Overhaul (weapons balance, terrorist spawns, AI tweak?)
