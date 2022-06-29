@@ -5,6 +5,7 @@
 4. Added if check and error handling to the WMIC command in Run.bat if it initiates or not.
 5. Added if check for a directory with no spaces in Run.bat, so it knows to skip without cutting off the '2' in Vegas 2. Same thing added to TeknoR6Vegas2 Configuration.bat.
 6. Added description.rtf to The Complete Overhaul folder (if it 'blocks' content, it's just images), added readme.txt to TeknoR6Vegas2, and re-created the readme for Vegas 2 Realism for a better format.
+7. Set variable 'f' used, instead of 'fail' in Run.bat, :restart.
 
 **V9.1**
 1. Implemented a better way of detecting Vegas 2 in Directory Finder.bat, simplifying the drive letter process, allowing users to grab their directory a bit faster than before. You no longer need to select steam/nonsteam, but selecting a drive letter is still required. Removed 3 branches of code in the process.

@@ -169,7 +169,7 @@ pause
 :restart
 cls
 set fail=
-set /p f=Would you like to restart? (Y/N) 
+set /p fail=Would you like to restart? (Y/N) 
 if /I '%fail%'=='Y' ( set dir=
 set start=
 cls
