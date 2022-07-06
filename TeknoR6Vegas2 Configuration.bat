@@ -116,7 +116,7 @@ if exist "Run TeknoR6Vegas2 (Admin only).lnk" ( echo TeknoR6Vegas2 shortcut dete
 goto :decision
 ) else ( goto :vbscript )
 
-REM --A VBscript is created to link the above batch file in the Temp folder. Afterwards, it is ran and deleted.--
+REM --A VBscript is created to link the above batch file in the Temp folder. Afterwards, it is ran and deleted. Referenced from: https://superuser.com/questions/455364/how-to-create-a-shortcut-using-a-batch-script.--
 :vbscript
 echo Creating TeknoR6Vegas2 shortcut...
 set SCRIPT="%TEMP%\%RANDOM%-%RANDOM%-%RANDOM%-%RANDOM%.vbs"
