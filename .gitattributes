@@ -1,2 +1,4 @@
 * linguist-vendored
 *.bat linguist-vendored=false
+*.h linguist-vendored=false
+*.fx linguist-vendored=false
