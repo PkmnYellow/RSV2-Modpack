@@ -5,6 +5,7 @@ The following mods are:
 * Realistic Reshade (shaders)
 * TeknoR6Vegas2 (16 player campaign, terrorist hunt, and versus)
 * Terrorist Hunt Control (keybinds, AI tweaks)
+* Texmod & Textures (retextures)
 * The Complete Overhaul (weapons balance, terrorist spawns, AI tweak?)
 * Vegas 2 Realism (big weapons balance)
 * Vegas 2 Terrorist Hunt Dedicated Server Pre-setup (.ini tweak, 24/7 TH via Task Scheduler)
