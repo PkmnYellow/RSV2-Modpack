@@ -65,6 +65,9 @@ if /I '%choice%'=='J' goto :drive9
 if /I '%choice%'=='K' goto :drive10
 if /I '%choice%'=='L' goto :drive11
 if /I '%choice%'=='M' goto :drive12
+if not defined choice ( echo No input added...
+goto :choice
+)
 echo "%choice%" is not valid, try again.
 goto :choice
 
@@ -168,6 +171,8 @@ pause
 
 :restart
 cls
+:restart_a
+echo.
 set fail=
 set /p fail=Would you like to restart? (Y/N) 
 if /I '%fail%'=='Y' ( set dir=
@@ -176,6 +181,9 @@ cls
 goto :process_m
 )
 if /I '%fail%'=='N' goto :end
+if not defined fail ( echo No input added...
+goto :restart_a
+)
 echo "%fail%" is not valid, try again.
 goto :restart
 

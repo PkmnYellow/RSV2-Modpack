@@ -66,8 +66,9 @@ set c=
 set /p c=Type the corresponding number for PlayerCap [0/1]:
 if %c%==0 goto :terroristcount_u
 if %c%==1 goto :terroristcount_u
-if '%c%'=="" goto :cont
-:cont
+if not defined c ( echo No input added...
+goto :playercap_u
+)
 echo "%c%" is not valid, try again.
 goto :playercap_u
 
@@ -79,8 +80,9 @@ set /p c2=How many terrorists would you like to spawn [0 default, 1-99]?
 if %c2%==0 goto :eyefinity_u
 if %c2% LEQ 99 ( if %c2% GEQ 1 ( goto :eyefinity_u
 ) )
-if '%c2%'=="" goto :cont2
-:cont2
+if not defined c2 ( echo No input added...
+goto :terroristcount_u
+)
 echo "%c2%" is not valid, try again.
 goto :terroristcount_u
 
@@ -93,8 +95,9 @@ set c3=
 set /p c3=Type the corresponding number for the Eyefinity Patch [0/1]:
 if %c3%==0 goto :batch
 if %c3%==1 goto :batch
-if '%c3%'=="" goto :cont3
-:cont3
+if not defined c3 ( echo No input added...
+goto :eyefinity_u
+)
 echo "%c3%" is not valid, try again.
 goto :eyefinity_u
 
@@ -150,6 +153,9 @@ set /p decision=Where would you like to go?[1/2/3]:
 if '%decision%'=='1' goto :UI
 if '%decision%'=='2' goto :start
 if '%decision%'=='3' goto :end
+if not defined decision ( echo No input added...
+goto :decision_a
+)
 echo "%decision%" is not valid, try again.
 goto :decision_a
 
