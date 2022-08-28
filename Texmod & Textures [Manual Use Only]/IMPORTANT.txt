@@ -1,0 +1,12 @@
+Run Texmod Configuration.bat first, and run texmod autoload.exe in ADMIN MODE. Completely separate from the main installer.
+
+You do have to re-run texmod autoload.exe if you want the retextures.
+
+If you need further instructions, check Appii's video here: https://www.youtube.com/watch?v=peHWLKNPAFg
+
+-Compatibility-
+1. This WILL NOT work alongside with TeknoR6Vegas2.exe. It has to be one or the other.
+
+-Known Issues-
+1. If you do not run texmod autoload.exe in Admin mode, and R6Vegas2_Game.exe runs in Admin mode via texmod, it will throw an error.
+2. Without texmod autoload.exe in Admin mode, the Terrorist Hunt Control V1.0 keybinds will most likely not work.
