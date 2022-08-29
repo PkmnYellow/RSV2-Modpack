@@ -175,11 +175,15 @@ REM --Scans for textures by storing them in 2 arrays.--
 :mod_main
 set z=0
 set n=0
+set f=0
 echo.
 echo Searching textures...
 
 for /R %%a in (*.tpf) do set text[!z!]=%%~fa&set /a z+=1 >nul
 set /a z2=z-1 >nul
+
+for /R %%a in (*.tpf) do set text_b[!f!]=%%~fa&set /a f+=1 >nul
+set /a f2=f-1 >nul
 
 for /R %%a in (*.tpf) do set text_f[!n!]=%%~na&set /a n+=1 >nul
 set /a n2=n-1 >nul
@@ -195,7 +199,8 @@ goto :process_end
 )
 )
 echo -TEXTURES AVAILABLE-
-for /L %%a in (0 1 !n2!) do echo !text_f[%%a]!
+for /L %%a in (0 1 !n2!) do if defined text_f[%%a] ( echo !text_f[%%a]!
+)
 echo.
 echo %n% textures.
 :c2_b
@@ -256,9 +261,21 @@ goto :mod_main
 
 REM --If %m% is greater than 1, the entire mod entries are deleted in prep for all texture installation. A fail safe, in case the user decides to install all, after installing the textures individually.--
 :mod_del2
-echo Deleting texture entries (might take a while)...
-for /L %%a in (0 1 %z2%) do (
-for /L %%b in (1 1 %z%) do powershell -Command "(gc 'Texmod & Textures `[Manual Use Only`]\default.ini') -replace [regex]::Escape('mod%%b=!del[%%a]!'), ('mod%%b=') | Out-File -encoding default 'Texmod & Textures `[Manual Use Only`]\default.ini'"
+echo Deleting texture entries...
+set q=0
+set r=0
+
+for /f "tokens=1 delims=" %%a in ('findstr /I "mod.=." "default.ini"') do set mod_d[!q!]=%%a &set /a q+=1 >nul
+
+for /f "tokens=1 delims=" %%a in ('findstr /I "mod..=." "default.ini"') do set mod_d[!q!]=%%a &set /a q+=1 >nul
+set /a q2=q-1 >nul
+
+for /f "tokens=1,2,3 delims==" %%a in ('set mod_d[') do set mod_s_d[!r!]=%%c&set /a r+=1 >nul
+
+for /L %%a in (0 1 %q2%) do set "mod_s_d[%%a]=!mod_s_d[%%a]:~0,-1!"
+
+for /L %%a in (0 1 %q2%) do ( 
+powershell -Command "(gc 'Texmod & Textures `[Manual Use Only`]\default.ini') -replace [regex]::Escape('!mod_s_d[%%a]!'), ('') | Out-File -encoding default 'Texmod & Textures `[Manual Use Only`]\default.ini'" 
 )
 
 set m=1
@@ -297,7 +314,7 @@ if %m% GTR 1 ( echo Individual textures detected...
 goto :mod_del2
 )
 echo Adding all textures...
-for /L %%a in (0 1 %z2%) do powershell -Command "(gc 'Texmod & Textures `[Manual Use Only`]\default.ini') -replace [regex]::Escape('mod!m!='), ('mod!m!=!text[%%a]!') | Out-File -encoding default 'Texmod & Textures `[Manual Use Only`]\default.ini'"&set /a m+=1 >nul
+for /L %%a in (0 1 %f2%) do powershell -Command "(gc 'Texmod & Textures `[Manual Use Only`]\default.ini') -replace [regex]::Escape('mod!m!='), ('mod!m!=!text_b[%%a]!') | Out-File -encoding default 'Texmod & Textures `[Manual Use Only`]\default.ini'"&set /a m+=1 >nul
 
 echo.
 echo All textures installed.
