@@ -192,10 +192,8 @@ set m=1
 
 REM --Main choice for adding textures individually, all at once, or a way to exit if need be.--
 :c2
-if %n%==0 ( if %n2%==-1 ( if %z%==0 ( if %z2%==-1 ( echo All textures are installed.
+if %n%==0 ( if %z%==0 ( echo All textures are installed.
 goto :process_end
-)
-)
 )
 )
 echo -TEXTURES AVAILABLE-
@@ -219,7 +217,7 @@ set /a m+=1 >nul
 )
 for /L %%b in (0 1 %n2%) do if /i "!text_f[%%b]!"=="%c2%" ( set text_f[%%b]=
 set text[%%b]=
-set /a n-=1&set /a n2-=1&set /a z-=1&set /a z2-=1 >nul
+set /a n-=1&set /a z-=1 >nul
 )
 
 REM --Prompts the user if they want to add another texture to the list.--
@@ -295,7 +293,7 @@ goto :mod_main
 
 REM --A shortcut of Texmod autoload.exe is created.--
 :vbscript
-echo Creating TeknoR6Vegas2 shortcut...
+echo Creating Texmod autoload shortcut...
 set SCRIPT="%TEMP%\%RANDOM%-%RANDOM%-%RANDOM%-%RANDOM%.vbs"
 
 echo Set oWS = WScript.CreateObject("WScript.Shell") >> %SCRIPT%
