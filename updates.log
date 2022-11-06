@@ -1,3 +1,7 @@
+**V9.35**
+1. Corrected a miswording in Texmod Config.bat.
+2. Created a 'Resources' section in readme.rtf, and cleaned up the 'Mods' section.
+
 **V9.3**
 1. Added Texmod Autoload and textures (thanks to Appii). Manual use only.
 2. Added Texmod Configuration.bat for an easy setup for install/uninstall of textures. No admin mode needed.
@@ -5,7 +9,7 @@
 4. Added IMPORTANT.txt in the Texmod & Textures folder. I encourage you to read it before using texmod/texmod autoload.exe.
 5. Uninstallation can now be done per mod, instead of uninstalling everything.
 6. Revised readme.rtf.
-
+ 
 **V9.2**
 1. TeknoR6Vegas2 Configuration.bat can now be ran independently, as long as directories.txt exists.
 2. Re-written the logic for TeknoR6Vegas2 installation to go directly to TeknoR6Vegas2 Configuration.bat after installation in Universal Installer.bat. More convenient in many ways.
