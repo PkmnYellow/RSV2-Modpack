@@ -1,8 +1,7 @@
-@echo off
-set var=%1
+@echo on
 color C
+set "vdir=%~dp0"
 cd /D "%~dp0"
-set vdir=%~dp0
 
 echo -------------------------------TeknoR6Vegas2 Configuration-------------------------------
 
@@ -10,21 +9,12 @@ REM --Checks for admin privileges, and if directories.txt exists.--
 :checks
 net session >nul 2>&1
 if %errorlevel%==0 ( echo Administrator privileges detected...
+goto :grabv
 ) else ( echo Not in Administrator mode. Please run TeknoR6Vegas2 Config.bat in Admin mode.
 echo.
 echo Closing program...
 pause
 goto :end )
-
-REM --Checks to make sure the directory variable exists.--
-:start
-if defined var ( echo Universal variable defined...
-set vdir=%~dp0R6V2 Mods\
-set UI=1
-goto :install_u
-) else ( echo Universal variable not defined...
-set UI=0 
-goto :grabv )
 
 REM --Grabs directory from directories.txt, and adjusts the directory if entered manually.--
 :grabv
@@ -64,11 +54,11 @@ echo 0. No PlayerCap (default)
 echo 1. PlayerCap (16 players)
 set c=
 set /p c=Type the corresponding number for PlayerCap [0/1]:
-if %c%==0 goto :terroristcount_u
-if %c%==1 goto :terroristcount_u
-if not defined c ( echo No input added...
+if "%c%"=="" ( echo No input added...
 goto :playercap_u
 )
+if %c%==0 goto :terroristcount_u
+if %c%==1 goto :terroristcount_u
 echo "%c%" is not valid, try again.
 goto :playercap_u
 
@@ -77,12 +67,12 @@ REM --User inputs total amount of terrorists for TH.--
 echo.
 set c2=
 set /p c2=How many terrorists would you like to spawn [0 default, 1-99]?
-if %c2%==0 goto :eyefinity_u
-if %c2% LEQ 99 ( if %c2% GEQ 1 ( goto :eyefinity_u
-) )
 if not defined c2 ( echo No input added...
 goto :terroristcount_u
 )
+if %c2%==0 goto :eyefinity_u
+if %c2% LEQ 99 ( if %c2% GEQ 1 ( goto :eyefinity_u
+) )
 echo "%c2%" is not valid, try again.
 goto :terroristcount_u
 
@@ -93,11 +83,11 @@ echo 0. No Eyefinity Patch
 echo 1. Eyefinity Patch (3 monitors only)
 set c3=
 set /p c3=Type the corresponding number for the Eyefinity Patch [0/1]:
-if %c3%==0 goto :batch
-if %c3%==1 goto :batch
 if not defined c3 ( echo No input added...
 goto :eyefinity_u
 )
+if %c3%==0 goto :batch
+if %c3%==1 goto :batch
 echo "%c3%" is not valid, try again.
 goto :eyefinity_u
 
@@ -141,8 +131,6 @@ cls
 echo You can launch TeknoR6Vegas2 with the shortcut created in this folder labelled 'Run TeknoR6Vegas2 (Admin only)'.
 pause
 cls
-if %UI%==1 ( goto :end
-)
 :decision_a
 echo.
 echo 1. Go to Universal Installer
@@ -150,12 +138,14 @@ echo 2. Go back to start
 echo 3. Exit Launcher
 set decision=
 set /p decision=Where would you like to go?[1/2/3]:
-if '%decision%'=='1' goto :UI
-if '%decision%'=='2' goto :start
-if '%decision%'=='3' goto :end
 if not defined decision ( echo No input added...
 goto :decision_a
 )
+if '%decision%'=='1' goto :UI
+if '%decision%'=='2' ( goto :playercap_u
+cls
+)
+if '%decision%'=='3' goto :end
 echo "%decision%" is not valid, try again.
 goto :decision_a
 

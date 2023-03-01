@@ -1,3 +1,8 @@
+**V9.32**
+1. F4 keybind used the wrong command in Terrorist Hunt Control.
+2. Re-written Install.bat for TeknoR6Vegas2 to include the code from TeknoR6Vegas2 Config.bat, rather than call it. Prevents script hanging.
+3. TeknoR6Vegas2 Config.bat statically accepted 'RSV2 Mods' as the folder name, rather than what the user has it as.
+
 **V9.31**
 1. Corrected a miswording in Texmod Config.bat.
 2. Created a 'Resources' section in readme.rtf, and cleaned up the 'Mods' section.
