@@ -1,4 +1,4 @@
-@echo on
+@echo off
 color C
 set "vdir=%~dp0"
 cd /D "%~dp0"
