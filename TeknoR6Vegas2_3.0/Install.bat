@@ -36,11 +36,11 @@ echo 0. No PlayerCap (default)
 echo 1. PlayerCap (16 players)
 set c=
 set /p c=Type the corresponding number for PlayerCap [0/1]:
-if %c%==0 goto :terroristcount_u
-if %c%==1 goto :terroristcount_u
 if "%c%"=="" ( echo No input added...
 goto :playercap_u
 )
+if %c%==0 goto :terroristcount_u
+if %c%==1 goto :terroristcount_u
 echo "%c%" is not valid, try again.
 goto :playercap_u
 
@@ -49,12 +49,12 @@ REM --User inputs total amount of terrorists for TH.--
 echo.
 set c2=
 set /p c2=How many terrorists would you like to spawn [0 default, 1-99]?
-if %c2%==0 goto :eyefinity_u
-if %c2% LEQ 99 ( if %c2% GEQ 1 ( goto :eyefinity_u
-) )
 if not defined c2 ( echo No input added...
 goto :terroristcount_u
 )
+if %c2%==0 goto :eyefinity_u
+if %c2% LEQ 99 ( if %c2% GEQ 1 ( goto :eyefinity_u
+) )
 echo "%c2%" is not valid, try again.
 goto :terroristcount_u
 
@@ -65,11 +65,11 @@ echo 0. No Eyefinity Patch
 echo 1. Eyefinity Patch (3 monitors only)
 set c3=
 set /p c3=Type the corresponding number for the Eyefinity Patch [0/1]:
-if %c3%==0 goto :batch
-if %c3%==1 goto :batch
 if not defined c3 ( echo No input added...
 goto :eyefinity_u
 )
+if %c3%==0 goto :batch
+if %c3%==1 goto :batch
 echo "%c3%" is not valid, try again.
 goto :eyefinity_u
 
