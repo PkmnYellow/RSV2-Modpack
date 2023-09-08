@@ -25,4 +25,4 @@ Before posting any issues, refer to [this](https://steamcommunity.com/sharedfile
 # NOCD Executable for TeknoR6
 Other than Gamecopyworld, the .exe required for TeknoR6 is [here](https://www.dropbox.com/s/galg0fzrkmvjq16/R6Vegas2_Game.zip?dl=0).
 
-_The .exe will always throw a false positive, acting like it's a virus. You can learn more about what a false positive is [here](https://www.majorgeeks.com/content/page/false_positives_the_unwanted_side_of_antivirus_protection.html)_
+_The .exe will always throw a false positive, acting like it's a virus. You can learn more about what a false positive is [here](https://www.majorgeeks.com/content/page/false_positives_the_unwanted_side_of_antivirus_protection.html)_.
