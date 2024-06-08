@@ -1,0 +1,2 @@
+1. Maybe add 'Too Many Terrorists' mod, add Internet tweaks, map extension, quick startup and possible sound bug fixes to V9.4.
+2. After #2, use the pre-existing scripts to install/uninstall for the GUI version, AKA, V10.0. (No more inputting numbers! :D)

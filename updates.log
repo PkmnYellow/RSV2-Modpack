@@ -1,3 +1,9 @@
+**V9.4 WIP**
+1. Added the no-CD patch EXE to the TeknoR6 install.bat, by request. That way, it's not necessary to go to Gamecopyworld.
+2. Added an ASCII art signature to all major .bat files.
+3. Minor fixes to syntax in Universal Installer.bat.
+4. 
+
 **V9.32**
 1. F4 keybind used the wrong command in Terrorist Hunt Control.
 2. Re-written Install.bat for TeknoR6Vegas2 to include the code from TeknoR6Vegas2 Config.bat, rather than call it. Prevents script hanging.

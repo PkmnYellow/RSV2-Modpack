@@ -1,5 +1,6 @@
 @echo off
 cd /D "%~dp0"
+set "main=%~dp0"
 set var=%1
 
 REM --Checks if the directory variable exists. Otherwise, the batch file will terminate.--
@@ -15,8 +16,13 @@ echo Exiting...
 goto :end
 ) else ( goto :install_u )
 
-REM --A folder and files are copied over containing TeknoR6Vegas2.--
+REM --The game launcher is renamed, and a folder and files are copied over containing TeknoR6Vegas2.--
 :install_u
+cd /d %var%\Binaries"
+if not exist R6Vegas2_Game.exe.bak ( echo Backing up original R6Vegas2_Game.exe...
+ren R6Vegas2_Game.exe R6Vegas2_Game.exe.bak
+)
+cd /d %main%
 robocopy Binaries %var%\Binaries" /e
 echo Installation Complete!
 goto :config_TR6
@@ -27,6 +33,21 @@ cd ..
 set "vdir=%~dp0"
 set "vdir=%vdir:~0,-18%"
 
+echo RRRR   SSS  V     V  22      M   M        d               k        V     V  9999    333   22 
+echo R   R S     V     V 2  2     MM MM        d               k k      V     V 9   9       3 2  2
+echo RRRR   SSS   V   V    2      M M M ooo  ddd ppp   aa  ccc kk        V   V   9999     33    2 
+echo R R       S   V V    2       M   M o o d  d p  p a a c    k k        V V      9 ..     3  2  
+echo R  RR SSSS     V    2222     M   M ooo  ddd ppp  aaa  ccc k  k        V      9  ..  333  2222
+echo                                             p                                                
+
+echo              b             PPPP  k               Y   Y     ll  ll           
+echo              b             P   P k k              Y Y       l   l           
+echo              bbb  y  y     PPPP  kk   mmmm  nnn    Y   eee  l   l  ooo w   w
+echo              b  b  yyy     P     k k  m m m n  n   Y   e e  l   l  o o w w w
+echo              bbb     y     P     k  k m m m n  n   Y   ee  lll lll ooo  w w 
+echo                    yy                                                       
+
+echo.
 echo -------------------------------TeknoR6Vegas2 Configuration-------------------------------
 
 REM --User inputs player cap for RSV2.--

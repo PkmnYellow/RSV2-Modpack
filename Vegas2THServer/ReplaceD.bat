@@ -3,6 +3,21 @@ cd /d "%~dp0"
 set var=%1
 color 3
 
+echo RRRR   SSS  V     V  22      M   M        d               k        V     V  9999    4  4
+echo R   R S     V     V 2  2     MM MM        d               k k      V     V 9   9    4  4
+echo RRRR   SSS   V   V    2      M M M ooo  ddd ppp   aa  ccc kk        V   V   9999    4444
+echo R R       S   V V    2       M   M o o d  d p  p a a c    k k        V V      9 ..     4
+echo R  RR SSSS     V    2222     M   M ooo  ddd ppp  aaa  ccc k  k        V      9  ..     4
+echo                                             p                                           
+
+echo              b             PPPP  k               Y   Y     ll  ll           
+echo              b             P   P k k              Y Y       l   l           
+echo              bbb  y  y     PPPP  kk   mmmm  nnn    Y   eee  l   l  ooo w   w
+echo              b  b  yyy     P     k k  m m m n  n   Y   e e  l   l  o o w w w
+echo              bbb     y     P     k  k m m m n  n   Y   ee  lll lll ooo  w w 
+echo                    yy                                                       
+
+echo.
 echo -------------------------------.xml Directory Replacer-------------------------------
 
 REM --References the directory from directories.txt, grabs it into a variable, and two 'for' loops are used to automatically check if you have the steam/nonsteam version.--
