@@ -23,6 +23,6 @@ You can simply drag and drop **directories.txt** and **installedmods.txt** to th
 Before posting any issues, refer to [this](https://steamcommunity.com/sharedfiles/filedetails/?id=2751815668) Steam guide for FAQ, compatibility, and known issues.
 
 # NOCD Executable for TeknoR6
-Other than Gamecopyworld, the .exe required for TeknoR6 is [here](https://www.dropbox.com/s/galg0fzrkmvjq16/R6Vegas2_Game.zip?dl=0). _**An SHA256 hash has been added for the sake of data integrity.**_ You can check them using an online [SHA256](https://emn178.github.io/online-tools/sha256_checksum.html) checker.
+Other than Gamecopyworld, the .exe required for TeknoR6 is [here](https://www.dropbox.com/s/galg0fzrkmvjq16/R6Vegas2_Game.zip?dl=0). _**An SHA256 hash has been added for the sake of data integrity.**_ You can check it using an online [SHA256](https://emn178.github.io/online-tools/sha256_checksum.html) checker.
 
 _The .exe will always throw a false positive, acting like it's a virus. You can learn more about what a false positive is [here](https://www.majorgeeks.com/content/page/false_positives_the_unwanted_side_of_antivirus_protection.html)_.
