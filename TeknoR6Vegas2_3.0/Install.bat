@@ -1,4 +1,4 @@
-@echo on
+@echo off
 cd /D "%~dp0"
 set "main=%~dp0"
 set var=%1
