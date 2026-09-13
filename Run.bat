@@ -33,12 +33,12 @@ if exist directories.txt ( goto :loopf
 )
 
 REM --This is used to grab the drive letters available, and store them into a variable from a temporary TXT file via 2 'for' loops.--
+REM --Due to 'wmic' being completely removed, 'mountvol' is used here for grabbing drive letters.--
 :process_m
 echo Searching Drive letters...
-wmic logicaldisk get name | findstr /i /v Name >nul 2>&1 > driveletters.txt
-if not %errorlevel%==0 ( echo Previous version of WMIC detected...
-wmic logicaldisk list /format:list | findstr /i "Name=.:" > driveletters.txt
+if exist driveletters.txt ( del /q driveletters.txt
 )
+for /f "tokens=1 delims=\" %%d in ('mountvol ^| findstr /r /i "[A-Z]:\\$"') do echo %%d >> driveletters.txt
 
 for /f "tokens=1 delims= " %%a in ('findstr ".:" driveletters.txt') do call :process %%a
 goto :choice
